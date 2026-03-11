@@ -62,10 +62,10 @@ function App() {
           <div style={{ fontSize: '1.5rem', fontWeight: '900', letterSpacing: '-1px' }}>
             EVCHARGE<span style={{ color: 'var(--primary)' }}>.</span>
           </div>
-          <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
-            <a href="#features" style={{ color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', opacity: 0.7 }}>Features</a>
-            <a href="#uvp" style={{ color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', opacity: 0.7 }}>Platform</a>
-            <a href="#demo" className="btn btn-primary" style={{ padding: '8px 20px', borderRadius: '2px' }}>Request Demo</a>
+          <div className="nav-menu" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+            <a href="#features" className="nav-link" style={{ color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', opacity: 0.7 }}>Features</a>
+            <a href="#uvp" className="nav-link" style={{ color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', opacity: 0.7 }}>Platform</a>
+            <a href="#demo" className="btn btn-primary demo-btn" style={{ padding: '8px 20px', borderRadius: '2px' }}>Request Demo</a>
           </div>
         </div>
       </nav>
@@ -85,7 +85,7 @@ function App() {
               </p>
               
               <form onSubmit={handleSubmit} style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'left' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '20px' }}>
+                <div className="form-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '20px' }}>
                   <div>
                     <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Name</label>
                     <input type="text" name="name" value={formData.name} onChange={handleChange} required style={{ width: '100%', padding: '12px', background: '#111', border: '1px solid #333', color: 'white', borderRadius: '4px' }} />
