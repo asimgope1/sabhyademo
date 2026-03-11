@@ -15,10 +15,10 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('Sending...');
-    
+
     // 💡 FOR DEMO: If you haven't deployed the Apps Script yet, it will run in "Demo Mode"
     // To enable real spreadsheet storage, replace 'DEMO' with your script URL.
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzsls2bGEJB6hGy86-VaQJz2vuwGpTHD2pLiQt7swBGCZ4LBKPQ15Cf_3s6zisEBLotTA/exec'; 
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzsls2bGEJB6hGy86-VaQJz2vuwGpTHD2pLiQt7swBGCZ4LBKPQ15Cf_3s6zisEBLotTA/exec';
 
     try {
       if (SCRIPT_URL === 'DEMO') {
@@ -33,7 +33,7 @@ function App() {
           body: JSON.stringify(formData),
         });
       }
-      
+
       setStatus('Lead Captured! Our team will contact you shortly.');
       setFormData({ name: '', email: '', company: '', message: '' });
     } catch (err) {
@@ -60,7 +60,7 @@ function App() {
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ fontSize: '1.5rem', fontWeight: '900', letterSpacing: '-1px' }}>
-            CHARGEWAY<span style={{ color: 'var(--primary)' }}>.</span>
+            ChargeWay<span style={{ color: 'var(--primary)' }}>.</span>
           </div>
           <div className="nav-menu" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
             <a href="#features" className="nav-link" style={{ color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', opacity: 0.7 }}>Features</a>
@@ -69,12 +69,12 @@ function App() {
           </div>
         </div>
       </nav>
-      
+
       <main>
         <Hero />
         <UVP />
         <Features />
-        
+
         {/* Lead Capture form Section */}
         <section id="demo" style={{ textAlign: 'center', backgroundColor: '#000' }}>
           <div className="container">
@@ -83,7 +83,7 @@ function App() {
               <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '48px', maxWidth: '600px', margin: '0 auto 48px' }}>
                 Join the network of professionals powering the future. Connect with our sales engineering team.
               </p>
-              
+
               <form onSubmit={handleSubmit} style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'left' }}>
                 <div className="form-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '20px' }}>
                   <div>
@@ -103,7 +103,7 @@ function App() {
                   <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>Message (Optional)</label>
                   <textarea name="message" value={formData.message} onChange={handleChange} rows="4" style={{ width: '100%', padding: '12px', background: '#111', border: '1px solid #333', color: 'white', borderRadius: '4px' }}></textarea>
                 </div>
-                
+
                 <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '16px' }}>Submit Request</button>
                 {status && <p style={{ marginTop: '20px', color: status.includes('Captured') ? 'var(--primary)' : '#ff4444', textAlign: 'center' }}>{status}</p>}
               </form>
