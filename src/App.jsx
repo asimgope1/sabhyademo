@@ -60,7 +60,7 @@ function App() {
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ fontSize: '1.5rem', fontWeight: '900', letterSpacing: '-1px' }}>
-            EVCHARGE<span style={{ color: 'var(--primary)' }}>.</span>
+            CHARGEWAY<span style={{ color: 'var(--primary)' }}>.</span>
           </div>
           <div className="nav-menu" style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
             <a href="#features" className="nav-link" style={{ color: 'var(--text-main)', textDecoration: 'none', fontSize: '0.9rem', fontWeight: '500', opacity: 0.7 }}>Features</a>
@@ -109,7 +109,7 @@ function App() {
               </form>
 
               <div style={{ marginTop: '60px', color: 'var(--text-muted)' }}>
-                <p>sales@evchargeapp.com | +91 9876543210</p>
+                <p>sales@chargeway.com | +91 9876543210</p>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ function App() {
       </main>
 
       <footer style={{ padding: '60px 0', borderTop: '1px solid #111', textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-        <p>&copy; 2026 EVCharge Sales Platforms. All rights reserved.</p>
+        <p>&copy; 2026 ChargeWay Sales Platforms. All rights reserved.</p>
         <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', marginTop: '20px' }}>
           <a href="#" style={{ color: 'inherit' }}>Twitter</a>
           <a href="#" style={{ color: 'inherit' }}>LinkedIn</a>

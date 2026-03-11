@@ -10,7 +10,7 @@ const UVP = () => {
               All-in-one <span className="electric-glow">Sales Engine</span>
             </h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', marginBottom: '32px' }}>
-              Perfect for EV charging companies, dealerships, and distributors. EVCharge Sales App helps you scale from lead to installation without the friction.
+              Perfect for EV charging companies, dealerships, and distributors. ChargeWay Sales App helps you scale from lead to installation without the friction.
             </p>
             <ul style={{ listStyle: 'none', color: 'var(--text-main)', fontSize: '1.1rem' }}>
               <li style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -27,7 +27,7 @@ const UVP = () => {
           <div style={{ flex: '1', minWidth: '300px', textAlign: 'center' }}>
             <img 
               src="/images/ev_app.png" 
-              alt="EVCharge App Mockup" 
+              alt="ChargeWay App Mockup" 
               style={{ width: '100%', maxWidth: '450px', borderRadius: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.5)' }} 
             />
           </div>
